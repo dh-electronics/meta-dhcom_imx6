@@ -1,0 +1,16 @@
+OpenEmbedded/Yocto BSP layer for DH electronics GmbH's DHCOM iMX6 module
+===========================================================
+
+This layer provides support for DH electronics's DHCOM iMX6 for
+use with OpenEmbedded and/or Yocto.
+
+This layer depends on:
+
+URI: https://github.com/openembedded/openembedded-core.git
+branch: dizzy
+
+URI: https://github.com/openembedded/meta-openembedded.git
+branch: dizzy
+
+URI: https://github.com/Freescale/meta-fsl-arm.git
+branch: dizzy
