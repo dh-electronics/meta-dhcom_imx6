@@ -4,25 +4,21 @@ COMPATIBLE_MACHINE = "(dhcom_imx6q|dhcom_imx6dl|dhcom_imx6s)"
 DEPENDS = "u-boot-mkimage-native"
 DESCRIPTION = "Install an u-boot script in the final .sdcard image"
 
-SRC_URI = "file://uLinuxEnv.txt \
-           file://COPYING "
-
 S = "${WORKDIR}/"
+
+SRC_URI = "file://DHupdate.ini \
+           file://COPYING "
 
 inherit deploy
 
 #do_mkimage () {
-#    uboot-mkimage  -A arm -O linux -T script -C none -a 0 -e 0 \
-#                   -n "boot script" -d bootscript.source \
-#                   bootscript
 #}
-
 #addtask mkimage after do_compile before do_install
 
 do_deploy () {
     install -d ${DEPLOYDIR}
-    rm -f ${DEPLOYDIR}/uLinuxEnv.txt
-    install ${S}/uLinuxEnv.txt ${DEPLOYDIR}/uLinuxEnv.txt
+    rm -f ${DEPLOYDIR}/DHupdate.ini
+    install ${S}/DHupdate.ini ${DEPLOYDIR}/DHupdate.ini
 }
 
 addtask deploy after do_install before do_build
@@ -30,5 +26,7 @@ addtask deploy after do_install before do_build
 do_compile[noexec] = "1"
 do_install[noexec] = "1"
 do_populate_sysroot[noexec] = "1"
+
+PROVIDES += "DHupdateini"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"

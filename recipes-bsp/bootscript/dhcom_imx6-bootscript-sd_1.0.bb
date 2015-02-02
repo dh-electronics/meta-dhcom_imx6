@@ -4,10 +4,12 @@ COMPATIBLE_MACHINE = "(dhcom_imx6q|dhcom_imx6dl|dhcom_imx6s)"
 DEPENDS = "u-boot-mkimage-native"
 DESCRIPTION = "Install an u-boot script in the final .sdcard image"
 
-SRC_URI = "file://bootscript.source \
-           file://COPYING "
-
 S = "${WORKDIR}/"
+
+SRC_URI = "file://${S}bootscript.source \
+           file://${S}COPYING "
+
+
 
 inherit deploy
 
@@ -30,5 +32,7 @@ addtask deploy after do_install before do_build
 do_compile[noexec] = "1"
 do_install[noexec] = "1"
 do_populate_sysroot[noexec] = "1"
+
+PROVIDES += "bootscript"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"

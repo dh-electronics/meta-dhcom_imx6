@@ -1,8 +1,10 @@
 LICENSE = "GPLv2+"
 LIC_FILES_CHKSUM = "file://COPYING;md5=751419260aa954499f7abaabaa882bbe"
 COMPATIBLE_MACHINE = "(dhcom_imx6q|dhcom_imx6dl|dhcom_imx6s)"
-DEPENDS = "u-boot-mkimage-native"
-DESCRIPTION = "Install an u-boot script in the final .sdcard image"
+#DEPENDS = "u-boot-mkimage-native"
+DESCRIPTION = "Install an splash image in the final .sdcard image"
+
+S = "${WORKDIR}/"
 
 SRC_URI = "file://800x480_done.bmp \
            file://800x480_error.bmp \
@@ -10,7 +12,7 @@ SRC_URI = "file://800x480_done.bmp \
            file://800x480_splash_DHCOM_iMX6.bmp \
            file://COPYING "
 
-S = "${WORKDIR}/"
+
 
 inherit deploy
 
@@ -39,5 +41,7 @@ addtask deploy after do_install before do_build
 do_compile[noexec] = "1"
 do_install[noexec] = "1"
 do_populate_sysroot[noexec] = "1"
+
+PROVIDES += "splash"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
