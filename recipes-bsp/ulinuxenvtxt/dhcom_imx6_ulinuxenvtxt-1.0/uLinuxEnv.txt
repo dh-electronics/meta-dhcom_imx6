@@ -1,0 +1,21 @@
+#############################################
+# Configuration file for the linux kernel
+#############################################
+
+# Linux kernel
+#############################################
+zImage_file=zImage
+console=ttymxc0,115200
+rootfs='root=/dev/mmcblk${mmcdev}p${mmc_rootfs_part} ro rootfstype=ext3 rootwait'
+#rootfs='root=/dev/nfs rootwait nfsroot=10.64.31.100:/tftpboot/nfsroot ip=dhcp'
+fbcon=rotate:0
+#videoargs='video='
+#optargs=
+
+
+# Device tree
+#############################################
+#fdt_file=/dtbs/imx6s-dheva01.dtb
+fdt_file=/dtbs/imx6dl-dheva01-ldo.dtb
+#fdt_file=/dtbs/imx6q-dheva01-ldo.dtb
+
