@@ -11,12 +11,12 @@ require recipes-kernel/linux/linux-dtb.inc
 DEPENDS += "lzop-native bc-native"
 
 # select branch 
-SRCBRANCH = "imx_3.10.17_1.0.2_ga"
-#SRCBRANCH = "master"
-# SRCREV = "91f8d16a53d496c9f1087e7e1081c72d50948434"
+SRCBRANCH = "release/20150209"
+
 # use latest source
 SRCREV = "${AUTOREV}"
-LOCALVERSION = "-dhcom-1v0"
+
+LOCALVERSION = "-release20150209"
 
 #SRC_URI += "file://0001-.....patch"
 

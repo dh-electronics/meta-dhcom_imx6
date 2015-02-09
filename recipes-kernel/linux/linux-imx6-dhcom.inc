@@ -11,14 +11,14 @@ LOCALVERSION ?= ""
 SCMVERSION ?= "y"
 
 # DH electronics at GitHub
-#SRC_URI = "git://github.com/dh-electronics/linux-imx6qdl.git;protocol=https;branch=${SRCBRANCH} \
-#           file://defconfig \
-#"
-
-# DH electronics internal
-SRC_URI = "git://git@sun1140/linux-imx6-vendor.git;protocol=ssh;branch=${SRCBRANCH} \
+SRC_URI = "git://github.com/dh-electronics/linux-imx6-vendor.git;protocol=https;branch=${SRCBRANCH} \
            file://defconfig \
 "
+
+# DH electronics internal
+#SRC_URI = "git://git@sun1140/linux-imx6-vendor.git;protocol=ssh;branch=${SRCBRANCH} \
+#           file://defconfig \
+#"
 
 S = "${WORKDIR}/git"
 
