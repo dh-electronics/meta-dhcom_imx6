@@ -11,12 +11,12 @@ require recipes-kernel/linux/linux-dtb.inc
 DEPENDS += "lzop-native bc-native"
 
 # select branch 
-SRCBRANCH = "release/20150209"
+SRCBRANCH = "release/20150423"
 
 # use latest source
 SRCREV = "${AUTOREV}"
 
-LOCALVERSION = "-release20150209"
+LOCALVERSION = "-release20150423"
 
 #SRC_URI += "file://0001-.....patch"
 
