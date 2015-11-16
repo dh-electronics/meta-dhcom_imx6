@@ -1,9 +1,8 @@
 include u-boot-imx6-dhcom.inc
 
-#PV = "dhv0.4.2.2+git${SRCPV}"
-PV = "dhv0.4.2.2"
+PV = "v1.0.0.4"
 
 # use latest source
 SRCREV = "${AUTOREV}"
-#LOCALVERSION = "-dhv0.4.2.2"
+#LOCALVERSION = "-v1.0.0.4"
 #SRCBRANCH = "patches-2014.10"

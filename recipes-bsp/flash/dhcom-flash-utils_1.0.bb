@@ -1,7 +1,7 @@
 LICENSE = "GPLv2+"
 LIC_FILES_CHKSUM = "file://COPYING;md5=751419260aa954499f7abaabaa882bbe"
 DESCRIPTION = "Collection of scripts to easy the work with the flash memory"
-COMPATIBLE_MACHINE = "(dhcomimx6dl|dhcomimx6q|dhcomimx6s)"
+COMPATIBLE_MACHINE = "(dhcom2bimx6dl|dhcom2bimx6q|dhcom2bimx6s|dhcom3bimx6dl|dhcom3bimx6q|dhcom3bimx6s)"
 RDEPENDS_${PN} += " mtd-utils \
                     ubinfo-klibc \
                     ubiformat-klibc \

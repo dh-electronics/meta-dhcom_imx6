@@ -1,6 +1,6 @@
 LICENSE = "GPLv2+"
 LIC_FILES_CHKSUM = "file://${S}COPYING;md5=751419260aa954499f7abaabaa882bbe"
-COMPATIBLE_MACHINE = "(dhcomimx6q|dhcomimx6dl|dhcomimx6s)"
+COMPATIBLE_MACHINE = "(dhcom2bimx6q)"
 #DEPENDS = "u-boot-mkimage-native"
 DESCRIPTION = "Install an uLinuxEnv.txt in the final .sdcard image"
 
@@ -27,6 +27,6 @@ do_compile[noexec] = "1"
 do_install[noexec] = "1"
 do_populate_sysroot[noexec] = "1"
 
-PROVIDES += "ulinuxenvtxt"
+PROVIDES += "imx6q2b-ulinuxenvtxt"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
