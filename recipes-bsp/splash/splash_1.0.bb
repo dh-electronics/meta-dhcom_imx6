@@ -1,6 +1,6 @@
 LICENSE = "GPLv2+"
 LIC_FILES_CHKSUM = "file://COPYING;md5=751419260aa954499f7abaabaa882bbe"
-COMPATIBLE_MACHINE = "(dhcom2bimx6dl|dhcom2bimx6q|dhcom2bimx6s|dhcom3bimx6dl|dhcom3bimx6q|dhcom3bimx6s)"
+
 #DEPENDS = "u-boot-mkimage-native"
 DESCRIPTION = "Install an splash image in the final .sdcard image"
 
