@@ -30,6 +30,6 @@ do_compile[noexec] = "1"
 do_install[noexec] = "1"
 do_populate_sysroot[noexec] = "1"
 
-PROVIDES += "settings"
+PROVIDES += "settings-13-fg0700g3dssw"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
