@@ -7,14 +7,14 @@ inherit fsl-u-boot-localversion
 
 DESCRIPTION = "U-Boot based on mainline U-Boot used by DH electronics GmbH to support i.MX6 DHCOMs"
 LICENSE = "GPLv2+"
-LIC_FILES_CHKSUM = "file://Licenses/README;md5=025bf9f768cbcb1a165dbe1a110babfb"
+LIC_FILES_CHKSUM = "file://Licenses/README;md5=0507cd7da8e7ad6d6701926ec9b84c95"
 COMPATIBLE_MACHINE = "(mxs|mx3|mx5|mx6|vf60)"
 
 DEPENDS_mxs += "elftosb-native openssl-native"
 
 PROVIDES += "u-boot"
 
-SRCBRANCH ??= "master"
+SRCBRANCH ??= "dev/2015.10_dhcom"
 
 SRC_URI = "git://github.com/dh-electronics/u-boot-imx6qdl.git;protocol=https;branch=${SRCBRANCH}"
 

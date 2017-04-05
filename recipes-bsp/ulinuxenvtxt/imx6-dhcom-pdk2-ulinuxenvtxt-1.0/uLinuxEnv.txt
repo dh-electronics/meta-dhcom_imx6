@@ -5,11 +5,10 @@
 # Linux kernel
 #############################################
 zImage_file=zImage
-console=ttymxc0,115200
-rootfs='root=/dev/mmcblk${mmcdev}p2 ro rootfstype=ext3 rootwait'
+rootfs='root=/dev/mmcblk${mmcdev}p2 rw rootfstype=ext3 rootwait'
 #rootfs='root=/dev/nfs rootwait nfsroot=10.64.31.100:/tftpboot/nfsroot ip=dhcp'
 fbcon=rotate:0
-videoargs='video=mxcfb0:dev=ldb,LDB-LB070WV8,if=RGB24,bpp=32'
+#videoargs=
 #optargs=
 
 

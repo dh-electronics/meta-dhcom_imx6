@@ -1,6 +1,6 @@
 LICENSE = "GPLv2+"
 LIC_FILES_CHKSUM = "file://${S}COPYING;md5=751419260aa954499f7abaabaa882bbe"
-COMPATIBLE_MACHINE = "(dhcom3bimx6dl|dhcom3bimx6q|dhcom3bimx6s)"
+COMPATIBLE_MACHINE = "(dhcom3bimx6d|dhcom3bimx6dl|dhcom3bimx6q|dhcom3bimx6s|dhcom4bimx6d|dhcom4bimx6dl|dhcom4bimx6q|dhcom4bimx6s)"
 #DEPENDS = "u-boot-mkimage-native"
 DESCRIPTION = "Install an uLinuxEnv.txt in the final .sdcard image"
 
