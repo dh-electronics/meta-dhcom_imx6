@@ -12,6 +12,13 @@ do_rootfs[depends] += "splash:do_deploy"
 do_rootfs[depends] += "settings-13-fg0700g3dssw:do_deploy"
 BOOT_SCRIPTS += "uLinuxEnv.txt 800x480_done.bmp 800x480_error.bmp 800x480_progress.bmp splash.bmp settings.bin"
 
+UBOOT_CONFIG ??= "all"
+UBOOT_CONFIG[all] = "dh_imx6_defconfig"
+UBOOT_CONFIG[solo] = "dh_imx6s_config"
+UBOOT_CONFIG[dl] = "dh_imx6dl_config"
+UBOOT_CONFIG[d] = "dh_imx6q_config"
+UBOOT_CONFIG[q] = "dh_imx6q_config"
+
 UBOOT_MAKE_TARGET = "u-boot.imx"
 UBOOT_BINARY = "u-boot.imx"
 

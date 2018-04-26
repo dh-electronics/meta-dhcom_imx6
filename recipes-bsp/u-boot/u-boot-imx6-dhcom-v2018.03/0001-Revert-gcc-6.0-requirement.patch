@@ -1,0 +1,27 @@
+From b4e277c7cfb9cfc362bbb637ce84b921931392da Mon Sep 17 00:00:00 2001
+From: Christoph Niedermaier <cniedermaier@dh-electronics.de>
+Date: Wed, 25 Apr 2018 16:43:28 +0200
+Subject: [PATCH] Revert gcc 6.0 requirement
+
+---
+ arch/arm/config.mk | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/arch/arm/config.mk b/arch/arm/config.mk
+index 9c213b8..eb2ae53 100644
+--- a/arch/arm/config.mk
++++ b/arch/arm/config.mk
+@@ -68,8 +68,8 @@ endif
+ checkgcc6:
+ 	@if test "$(call cc-name)" = "gcc" -a \
+ 			"$(call cc-version)" -lt "0600"; then \
+-		echo '*** Your GCC is older than 6.0 and is not supported'; \
+-		false; \
++		echo -n '*** Your GCC is older than 6.0 and will not be '; \
++		echo 'supported starting in v2018.01.'; \
+ 	fi
+ 
+ 
+-- 
+2.1.4
+
