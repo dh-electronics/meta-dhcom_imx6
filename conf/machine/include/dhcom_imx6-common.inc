@@ -5,7 +5,7 @@ require conf/machine/include/tune-cortexa9.inc
 
 PREFERRED_PROVIDER_virtual/bootloader = "u-boot-imx6-dhcom"
 PREFERRED_PROVIDER_u-boot = "u-boot-imx6-dhcom"
-PREFERRED_VERSION_u-boot-imx6-dhcom = "v2015.10"
+PREFERRED_VERSION_u-boot-imx6-dhcom = "v2018.03"
 IMAGE_BOOTLOADER ?= "u-boot"
 #do_rootfs[depends] += "bootscript:do_deploy"
 do_rootfs[depends] += "splash:do_deploy"
@@ -19,8 +19,8 @@ UBOOT_CONFIG[dl] = "dh_imx6dl_config"
 UBOOT_CONFIG[d] = "dh_imx6q_config"
 UBOOT_CONFIG[q] = "dh_imx6q_config"
 
-UBOOT_MAKE_TARGET = "u-boot.imx"
-UBOOT_BINARY = "u-boot.imx"
+UBOOT_MAKE_TARGET = "all"
+UBOOT_BINARY = "u-boot-with-spl.imx"
 
 # override boot partition size 50MB and volume-id
 BOOT_SPACE = "51200"
