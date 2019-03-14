@@ -7,7 +7,7 @@ inherit fsl-u-boot-localversion
 
 DESCRIPTION = "U-Boot based on mainline U-Boot used by DH electronics GmbH to support i.MX6 DHCOMs"
 LICENSE = "GPLv2+"
-COMPATIBLE_MACHINE = "(mxs|mx3|mx5|mx6|vf60|dhcom4bimx6ull)"
+COMPATIBLE_MACHINE = "(mxs|mx3|mx5|mx6|vf60|dhcom1bimx6ull)"
 
 DEPENDS_mxs += "elftosb-native openssl-native"
 
