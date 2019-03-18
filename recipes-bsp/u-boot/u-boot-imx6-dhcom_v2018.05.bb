@@ -10,7 +10,7 @@ SRCBRANCH ??= "dev/2018.05_dhcom"
 #"
 
 SRC_URI = "\
-    "git://github.com/dh-electronics/u-boot-imx6qdl.git;protocol=https;branch=${SRCBRANCH}"\
+    git://github.com/dh-electronics/u-boot-imx6qdl.git;protocol=https;branch=${SRCBRANCH}\
 "
 
 PV = "v2018.05"
