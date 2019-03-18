@@ -12,14 +12,15 @@ SCMVERSION ?= "y"
 SRCBRANCH ?= ""
 
 # DH electronics at GitHub
-#SRC_URI = "git://github.com/dh-electronics/linux-imx6qdl.git;protocol=https;branch=${SRCBRANCH} \
-#           file://defconfig \
-#"
-
-# DH electronics internal
-SRC_URI = "git://git@dhplgl01.dh-electronics.org/dhcom-imx6/linux-imx6qdl.git;protocol=ssh;branch=${SRCBRANCH} \
+SRC_URI = "git://github.com/dh-electronics/linux-imx6qdl.git;protocol=https;branch=${SRCBRANCH} \
            file://defconfig \
 "
+
+# DH electronics internal
+#SRC_URI = "git://git@dhplgl01.dh-electronics.org/
+#dhcom-imx6/linux-imx6qdl.git;protocol=ssh;branch=${SRCBRANCH} \
+#           file://defconfig \
+#"
 S = "${WORKDIR}/git"
 
 # We need to pass it as param since kernel might support more then one
