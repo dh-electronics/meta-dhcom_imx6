@@ -1,0 +1,43 @@
+################################################################################
+# Configuration file of the linux kernel
+################################################################################
+
+# Linux kernel
+################################################################################
+zImage_file=zImage
+
+rootfs='root=/dev/mmcblk0p${mmc_rootfs_part} rw rootfstype=ext3 rootwait'
+#rootfs='root=/dev/mmcblk${mmcdev}p${mmc_rootfs_part} rw rootfstype=ext3 rootwait'
+#rootfs='root=/dev/sda2 rw rootfstype=ext3 rootwait'
+#rootfs='root=/dev/nfs rootwait nfsroot=10.64.31.100:/tftpboot/nfsroot ip=dhcp'
+
+#optargs='quiet'
+#optargs='consoleblank=0'
+#optargs='vt.global_cursor_default=0'
+#optargs='loglevel=8'
+#optargs='earlyprintk=serial,ttymxc0,115200'
+#optargs='ftrace=function_graph ftrace_filter=FUNC_PATTERN'
+#optargs='lpj=7905280'
+#optargs='maxcpus=1'
+#optargs='g_ether.dev_addr=6e:37:c0:1d:de:c6 g_ether.host_addr=6e:37:c0:1d:de:c7'
+#optargs='g_ether.iManufacturer=DH_electronics g_ether.iProduct=PKD2 g_ether.iSerialNumber=${SN}'
+#optargs='micrel.r260=0x9797 micrel.r261=0x7777 micrel.r262=0x7777'
+#optargs='libata.force=1.5Gbps'
+#optargs='imx2-wdt.nowayout'
+#optargs='imx2-wdt.keepactive'
+
+
+# Device tree
+################################################################################
+fdt_file=/imx6ull-dh-drc02.dtb
+
+
+
+# Display and backlight
+################################################################################
+fbcon=rotate:0
+
+#videoargs='video=mxcfb0:dev=hdmi,1920x1080M@60,if=RGB24,bpp=32'
+
+#backlight='pwm_bl.disable'
+#backlight='pwm_bl.set=BLGPIO:91,BLINV:0,BLON:1,PWMINV:1'
