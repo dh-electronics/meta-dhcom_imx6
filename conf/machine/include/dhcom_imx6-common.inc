@@ -29,7 +29,6 @@ BOOTDD_VOLUME_ID ?= "boot"
 
 # Use linux kernel iMX6 dhcom
 PREFERRED_PROVIDER_virtual/kernel = "linux-imx6-dhcom"
-PREFERRED_VERSION_linux-imx6-dhcom = "4.19.8"
 KERNEL_IMAGETYPE = "zImage"
 
 SERIAL_CONSOLE = "115200 ttymxc0"
