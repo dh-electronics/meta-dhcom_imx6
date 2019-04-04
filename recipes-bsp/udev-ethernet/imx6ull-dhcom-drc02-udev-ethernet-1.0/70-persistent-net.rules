@@ -1,0 +1,2 @@
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="fec", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNELS=="2188000.ethernet", NAME="eth0"
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="fec", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNELS=="20b4000.ethernet", NAME="eth2"
