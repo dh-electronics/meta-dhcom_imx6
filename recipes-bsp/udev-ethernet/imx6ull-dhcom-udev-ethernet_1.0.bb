@@ -1,6 +1,6 @@
 LICENSE = "GPLv2+"
 LIC_FILES_CHKSUM = "file://${S}COPYING;md5=751419260aa954499f7abaabaa882bbe"
-COMPATIBLE_MACHINE = "(dhcom1bimx6ulldrc02)"
+COMPATIBLE_MACHINE = "(mx6ull)"
 DESCRIPTION = "Install an udev-ethernet rule in the final .sdcard image"
 
 S = "${WORKDIR}/"
@@ -15,5 +15,5 @@ do_install () {
 
 FILES_${PN} += "/etc/udev/rules.d/70-persistent-net.rules"
 
-PROVIDES += "imx6ull-dhcom-drc02-udev-ethernet"
+PROVIDES += "imx6ull-dhcom-udev-ethernet"
 
