@@ -14,10 +14,10 @@ BOOT_SCRIPTS += "uLinuxEnv.txt 800x480_done.bmp 800x480_error.bmp 800x480_progre
 
 UBOOT_CONFIG ??= "all"
 UBOOT_CONFIG[all] = "dh_imx6_defconfig"
-UBOOT_CONFIG[solo] = "dh_imx6s_config"
-UBOOT_CONFIG[dl] = "dh_imx6dl_config"
-UBOOT_CONFIG[d] = "dh_imx6q_config"
-UBOOT_CONFIG[q] = "dh_imx6q_config"
+UBOOT_CONFIG[solo] = "dh_imx6_config"
+UBOOT_CONFIG[dl] = "dh_imx6_config"
+UBOOT_CONFIG[d] = "dh_imx6_config"
+UBOOT_CONFIG[q] = "dh_imx6_config"
 UBOOT_CONFIG[ull] = "dh_imx6ull_emmc_defconfig"
 
 UBOOT_MAKE_TARGET = "u-boot.img"
