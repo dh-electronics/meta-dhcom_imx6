@@ -27,6 +27,6 @@ do_compile[noexec] = "1"
 do_install[noexec] = "1"
 do_populate_sysroot[noexec] = "1"
 
-PROVIDES += "imx6-dhcom-pdk2-ulinuxenvtxt"
+PROVIDES += "imx6ull-dhcom-pdk2-ulinuxenvtxt"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
