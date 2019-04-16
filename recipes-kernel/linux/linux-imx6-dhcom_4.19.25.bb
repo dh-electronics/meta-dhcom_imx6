@@ -6,6 +6,7 @@ DESCRIPTION = "Linux Kernel provided and supported by Freescale with focus on \
 i.MX Family Reference Boards. It includes support for many IPs such as GPU, VPU and IPU."
 
 require recipes-kernel/linux/linux-imx6-dhcom.inc
+LIC_FILES_CHKSUM="file://COPYING;md5=bbea815ee2795b2f4230826c0c6b8814"
 
 DEPENDS += "lzop-native bc-native"
 
