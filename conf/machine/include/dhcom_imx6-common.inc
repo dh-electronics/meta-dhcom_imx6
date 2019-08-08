@@ -20,8 +20,9 @@ UBOOT_CONFIG[d] = "dh_imx6_config"
 UBOOT_CONFIG[q] = "dh_imx6_config"
 UBOOT_CONFIG[ull] = "dh_imx6ull_emmc_defconfig"
 
-UBOOT_MAKE_TARGET = "u-boot.img"
-UBOOT_BINARY = "u-boot.img"
+UBOOT_MAKE_TARGET = "u-boot-with-spl.imx"
+UBOOT_BINARY = "u-boot-with-spl.imx"
+UBOOT_SUFFIX="imx"
 
 # override boot partition size 50MB and volume-id
 BOOT_SPACE = "51200"
