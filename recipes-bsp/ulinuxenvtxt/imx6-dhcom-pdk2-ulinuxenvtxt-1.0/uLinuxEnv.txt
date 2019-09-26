@@ -5,6 +5,7 @@
 # Linux kernel
 #############################################
 zImage_file=zImage
+#rootfs='root=/dev/sda1 rw rootfstype=ext3 rootwait'
 rootfs='root=/dev/mmcblk${mmcdev}p2 rw rootfstype=ext3 rootwait'
 #rootfs='root=/dev/nfs rootwait nfsroot=10.64.31.100:/tftpboot/nfsroot ip=dhcp'
 fbcon=rotate:0
