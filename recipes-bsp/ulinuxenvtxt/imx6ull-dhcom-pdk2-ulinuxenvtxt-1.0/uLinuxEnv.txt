@@ -29,7 +29,7 @@ rootfs='root=/dev/sda2 rw rootfstype=ext3 rootwait'
 
 # Device tree
 ################################################################################
-fdt_file=/imx6ull-dh-pdk2.dtb
+fdt_file=/imx6ull-dhcom-pdk2.dtb
 #fdt_file=/dtbs_4.19.8/imx6ull-dh-pdk2_sdcard_low.dtb
 #fdt_file=/dtbs_4.19.8/imx6ull-dh-pdk2_sdcard_high.dtb
 

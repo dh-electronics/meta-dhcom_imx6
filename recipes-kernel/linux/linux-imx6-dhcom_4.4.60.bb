@@ -6,21 +6,23 @@ DESCRIPTION = "Linux Kernel provided and supported by Freescale with focus on \
 i.MX Family Reference Boards. It includes support for many IPs such as GPU, VPU and IPU."
 
 require recipes-kernel/linux/linux-imx6-dhcom.inc
-LIC_FILES_CHKSUM="file://COPYING;md5=bbea815ee2795b2f4230826c0c6b8814"
+LIC_FILES_CHKSUM="file://COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
 
 DEPENDS += "lzop-native bc-native"
 
 # select branch 
-SRCBRANCH = "release/4.19.25_dhsom/20191010"
+SRCBRANCH = "dev/4.4.60_dhcom"
 
 # use latest source
 SRCREV = "${AUTOREV}"
 
-LOCALVERSION = "-release20191010"
+LOCALVERSION = "-dev4460"
 
 #SRC_URI += "file://0001-.....patch"
 
 COMPATIBLE_MACHINE = "(mx6)"
 BB_STRICT_CHECKSUM = "0"
+
+
 
 

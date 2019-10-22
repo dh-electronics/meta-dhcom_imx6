@@ -6,8 +6,8 @@
 ################################################################################
 zImage_file=zImage
 
-rootfs='root=/dev/mmcblk0p${mmc_rootfs_part} rw rootfstype=ext3 rootwait'
-#rootfs='root=/dev/mmcblk${mmcdev}p${mmc_rootfs_part} rw rootfstype=ext3 rootwait'
+#rootfs='root=/dev/mmcblk0p${mmc_rootfs_part} rw rootfstype=ext3 rootwait'
+rootfs='root=/dev/mmcblk${mmcdev}p${mmc_rootfs_part} rw rootfstype=ext3 rootwait'
 #rootfs='root=/dev/sda2 rw rootfstype=ext3 rootwait'
 #rootfs='root=/dev/nfs rootwait nfsroot=10.64.31.100:/tftpboot/nfsroot ip=dhcp'
 
@@ -29,7 +29,7 @@ rootfs='root=/dev/mmcblk0p${mmc_rootfs_part} rw rootfstype=ext3 rootwait'
 
 # Device tree
 ################################################################################
-fdt_file=/imx6ull-dh-drc02.dtb
+fdt_file=/imx6ull-dhcom-drc02.dtb
 
 
 
