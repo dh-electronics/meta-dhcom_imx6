@@ -9,6 +9,8 @@ EXTRA_OEMAKE_class-cross = 'HOSTCC="${CC} ${CFLAGS} ${LDFLAGS}" V=1'
 
 inherit uboot-config
 
+SRC_URI += "file://fw_env.config;"
+FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
 do_compile () {
 	oe_runmake ${UBOOT_MACHINE}
 	oe_runmake envtools
@@ -19,7 +21,7 @@ do_install () {
 	install -d ${D}${sysconfdir}
 	install -m 755 ${S}/tools/env/fw_printenv ${D}${base_sbindir}/fw_printenv
 	install -m 755 ${S}/tools/env/fw_printenv ${D}${base_sbindir}/fw_setenv
-	install -m 0644 ${S}/tools/env/fw_env.config ${D}${sysconfdir}/fw_env.config
+	install -m 0644 ${WORKDIR}/fw_env.config ${D}${sysconfdir}/fw_env.config
 }
 
 do_install_class-cross () {
