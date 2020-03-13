@@ -1,0 +1,11 @@
+[Unit]
+Description=Example application service
+
+[Service]
+ExecStart=/bin/example-application.sh
+Restart=always
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target
+
