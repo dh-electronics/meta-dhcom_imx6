@@ -1,7 +1,3 @@
-#
-# Copyright (C) 2007 OpenedHand Ltd.
-#
-
 SUMMARY = "Minimal boot requirements using sysystemd"
 DESCRIPTION = "The minimal set of packages required to boot the system with systemd"
 PR = "r17"
